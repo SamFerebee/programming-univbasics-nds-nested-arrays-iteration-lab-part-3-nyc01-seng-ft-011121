@@ -13,7 +13,7 @@ def join_nested_strings(src)
     end
     outer += 1 
   end
-  return_arr.join
+  return_arr.join(" ")
   return_arr    
   
 end
