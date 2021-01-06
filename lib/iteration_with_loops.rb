@@ -6,7 +6,14 @@ def join_nested_strings(src)
   while outer < src.size do
     inner = 0 
     while inner < src[outer].size do
-      if src[outer][inner].is_a?
+      if src[outer][inner].is_a?(String)
+        return_arr.push(src[outer][inner])
+      end
+      inner += 1 
+    end
+    outer += 1 
+  end
+  return_arr
       
   
 end
